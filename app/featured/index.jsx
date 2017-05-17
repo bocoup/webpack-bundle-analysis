@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import './static/featured.css';
 
-class IconBanner extends Component {
+class Featured extends Component {
   render() {
     return (
       <div id="featured-wrapper">
@@ -43,4 +44,4 @@ class IconBanner extends Component {
   }
 }
 
-export default IconBanner;
+export default Featured;

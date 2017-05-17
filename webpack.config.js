@@ -38,6 +38,15 @@ module.exports = {
           limit: 25000,
           name:'images/[name].[ext]'
         },
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 50000,
+          // Output below fonts directory
+          name: 'fonts/[name].[ext]',
+        },
       }
     ]
   }

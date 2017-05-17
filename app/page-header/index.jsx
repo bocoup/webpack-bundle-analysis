@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './static/logo.css';
 
 class PageHeader extends Component {
   render() {
