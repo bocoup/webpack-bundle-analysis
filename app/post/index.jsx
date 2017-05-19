@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import Navigation from '../navigation/index.jsx';
 import PageHeader from '../page-header/index.jsx';
 import Banner from '../banner/index.jsx';
+import Contact from '../contact/index.jsx';
 import Footer from '../footer/index.jsx';
 
 class Post extends Component {
@@ -26,6 +27,7 @@ class Post extends Component {
 
           <p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops</p>
         </section>
+        <Contact />
         <Footer />
       </div>
     );
