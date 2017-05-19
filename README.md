@@ -12,7 +12,7 @@ As you develop more and modify your codebase, it's worth doing audits of your we
 
 To do this, in the command line in the root folder of your theme, run the following:
 
-`node_modules/.bin/webpack --config client/config/webpack.config.js --profile --json > stats.json`
+`node_modules/.bin/webpack --config webpack.config.js --profile --json > stats.json`
 
 The file `stats.json` should be generated in the root of the project. Upload it on: [http://webpack.github.io/analyse/](http://webpack.github.io/analyse/)
 
