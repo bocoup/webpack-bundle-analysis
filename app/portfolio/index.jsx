@@ -15,7 +15,7 @@ class Portfolio extends Component {
     return (
       <div>
         <Navigation />
-        <PageHeader />
+        <PageHeader title="Portfolio"/>
         <PortfolioList />
         <Contact />
         <Footer />

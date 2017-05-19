@@ -6,13 +6,13 @@ class Navigation extends Component {
   render() {
     return (
       <header id="header">
-        <nav id="menu" class="container">
+        <div id="menu" className="container">
           <ul>
-            <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-            <li><a href="#" accesskey="2" title="">Gallery</a></li>
-            <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+            <li className="current_page_item"><a href="index.html" title="">Homepage</a></li>
+            <li><a href="post.html" title="">Post</a></li>
+            <li><a href="portfolio.html" title="">Portfolio</a></li>
           </ul>
-        </nav>
+        </div>
       </header>
     )
   }

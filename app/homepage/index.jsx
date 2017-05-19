@@ -17,7 +17,7 @@ class Homepage extends Component {
     return (
       <div>
         <Navigation />
-        <PageHeader />
+        <PageHeader title="Webpack Analysis Example Site"/>
         <Banner />
         <Featured />
         <PortfolioList />

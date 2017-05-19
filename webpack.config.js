@@ -3,6 +3,7 @@
 // Webpack dependencies
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Main webpack config
 module.exports = {
@@ -13,8 +14,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'js/[name].bundle.js',
-    publicPath:'build/'
+    filename: 'js/[name].bundle.js'
   },
   module: {
     loaders: [
@@ -33,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|svg)$/,
-        loader: "url-loader",
+        loader: 'url-loader',
         options: {
           limit: 25000,
           name:'images/[name].[ext]'
@@ -49,5 +49,22 @@ module.exports = {
         },
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      chunks: ['home'],
+      filename: 'index.html',
+      template: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['portfolio'],
+      filename: 'portfolio.html',
+      template: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['post'],
+      filename: 'post.html',
+      template: 'index.html'
+    }),
+  ]
 }
