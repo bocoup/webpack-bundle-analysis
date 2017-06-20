@@ -50,6 +50,11 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    compress: false,
+    port: 9000
+  },
   plugins: [
     new HtmlWebpackPlugin({
       chunks: ['home'],
